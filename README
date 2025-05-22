@@ -6,12 +6,13 @@ Original: "255.100.50.0"
 Defanged: "255[.]100[.]50[.]0"
     
 -- dependencies -- 
-1. just
+1. gcc (aarch64)
+2. just
 
 -- how to run -- 
 $ just run
 
-sample run:
+sample run on apple-silicon:
 
 Original: "1.1.1.1"
 Defanged: "1[.]1[.]1[.]1"
