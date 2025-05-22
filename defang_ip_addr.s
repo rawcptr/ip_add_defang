@@ -73,7 +73,7 @@ _defang_ip_addr:
     b .L_epilogue_start
 
 .L_pass2_loop:
-    ldrb w25, [x23], #1    // w25 = *x23; x23 = x23 + 1 (input_read_ptr advances)
+    ldrb w25, [x23], #1    // w25 = *x23
 
     cmp w25, #0            // check for null terminator
     beq .L_pass2_end
