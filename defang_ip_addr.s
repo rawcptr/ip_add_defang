@@ -17,7 +17,7 @@ _defang_ip_addr:
     // x22 new str ptr              from malloc
     // x23 input read ptr           for pass 2
     // x24 output read ptr          for pass 2
-    // x25 tmp for langth calc
+    // x25 tmp for length calc
     // x26 original input str ptr
 
     stp x19, x20, [SP, #-16]! // current SP is SP - 16
@@ -113,4 +113,4 @@ _defang_ip_addr:
     // this is the final stack cleanup for the frame.
     ldp x29, x30, [SP], #16 // restore x29, x30 and increment SP by 16 
 
-    ret  // return to the caller 
+    ret // return to caller
