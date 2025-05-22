@@ -1,0 +1,33 @@
+implement defang_ip_addr
+========================
+
+-- example -- 
+Original: "255.100.50.0"
+Defanged: "255[.]100[.]50[.]0"
+    
+-- dependencies -- 
+1. just
+
+-- how to run -- 
+$ just run
+
+sample run:
+
+Original: "1.1.1.1"
+Defanged: "1[.]1[.]1[.]1"
+---
+Original: "255.100.50.0"
+Defanged: "255[.]100[.]50[.]0"
+---
+Original: "192.168.1.1"
+Defanged: "192[.]168[.]1[.]1"
+---
+Original: "10.0.0.1"
+Defanged: "10[.]0[.]0[.]1"
+---
+Original: "no.dots.here"
+Defanged: "no[.]dots[.]here"
+---
+Original: ""
+Defanged: ""
+---
